@@ -2,7 +2,11 @@ import express from 'express';
 
 const server = express();
 
-server.get('/', (req, res) => {
+interface Teste {
+
+}
+
+server.get('/', (_, res) => {
     res.send('Olá, Mundo!');
 });
 
